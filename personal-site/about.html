@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 · 林一凡</title>
+  <meta name="description" content="林一凡的个人介绍：5 年前端开发经验，专注 Web 体验与数据可视化，欢迎了解我的经历与技能。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======== 顶部导航 ======== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">林一凡<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-burger" aria-label="打开菜单">
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link active" href="about.html">关于</a>
+        <a class="nav-link" href="works.html">作品</a>
+        <a class="nav-link" href="blog.html">博客</a>
+        <a class="nav-link" href="contact.html">联系</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换深浅色模式" title="切换深浅色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zM4.9 4.9a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4zm11.4 11.4a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4l-1.4-1.4a1 1 0 0 1 0-1.4zM3 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm16 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1zM4.9 19.1a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0zm11.4-11.4a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== 页头 ======== -->
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="index.html">首页</a><span class="sep">/</span><span>关于我</span>
+      </nav>
+      <h1 class="page-title">关于我</h1>
+      <p class="page-sub">一个喜欢把复杂变简单的前端工程师。</p>
+    </div>
+  </section>
+
+  <!-- ======== 个人简介 ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="article-body" style="max-width:760px; margin:0;">
+        <p>
+          你好，我是<strong>林一凡</strong>，一名坐标杭州的前端工程师。过去 5 年，我先后服务于创业公司与中型互联网团队，
+          负责过官网、后台管理系统、数据大屏与移动端 H5 等多种类型的项目。
+        </p>
+        <p>
+          我尤其喜欢<strong>数据可视化</strong>方向——把冷冰冰的数字变成直观、可交互、有温度的界面，
+          这个过程总是让我很有成就感。工作之外，我保持着写技术博客的习惯，也喜欢阅读、摄影与徒步。
+        </p>
+        <p>
+          我相信好的前端不只是「还原设计稿」，更是对<strong>性能、可访问性与用户体验</strong>的持续打磨。
+          这个网站就是用纯 HTML + CSS 搭建的，算是我对「现代静态网站」的一次完整实践。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 工作经历 ======== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">工作经历</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-period">2023.07 — 至今</div>
+          <h3 class="timeline-role">高级前端工程师</h3>
+          <div class="timeline-org">云帆科技 · 数据产品部</div>
+          <p class="timeline-content">
+            负责企业级数据可视化产品的前端架构与核心模块开发；主导搭建组件库与可视化基础能力，
+            支撑 10+ 条业务线的数据大屏；带领 3 人小组完成年度大版本迭代。
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">2021.07 — 2023.06</div>
+          <h3 class="timeline-role">前端开发工程师</h3>
+          <div class="timeline-org">青柠互动 · 前端组</div>
+          <p class="timeline-content">
+            负责多个品牌官网与营销 H5 的开发，主导团队从 jQuery 迁移到 Vue 3 + Vite，
+            页面平均加载性能提升约 60%；沉淀出一套可复用的营销页模板。
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-period">2020.07 — 2021.06</div>
+          <h3 class="timeline-role">前端实习生 → 初级工程师</h3>
+          <div class="timeline-org">拾光工作室</div>
+          <p class="timeline-content">
+            从切图开始接触真实项目，逐步独立负责小程序与 PC 端页面的开发与维护，打下扎实基础。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 教育经历 ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">教育经历</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-period">2016.09 — 2020.06</div>
+          <h3 class="timeline-role">计算机科学与技术 · 本科</h3>
+          <div class="timeline-org">某某大学</div>
+          <p class="timeline-content">
+            主修 Web 开发与软件工程；毕业设计《校园二手交易平台》获学院优秀毕设；
+            曾担任学院技术社团副社长，组织过多次前端分享会。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 技能与证书 ======== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">技能清单</h2>
+        <p class="section-sub">按熟练程度排序，保持持续学习。</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-name"><span class="ico">🌐</span>Web 前端开发</div>
+          <p class="skill-desc">HTML5 / CSS3 / JavaScript，现代布局与交互动效。</p>
+          <div class="skill-tags">
+            <span class="tag tag-primary">熟练</span>
+            <span class="tag">语义化</span><span class="tag">CSS Grid</span><span class="tag">ES2024</span>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span class="ico">⚛️</span>框架与工程化</div>
+          <p class="skill-desc">Vue / React 双栈，Vite 构建，TypeScript 类型保障。</p>
+          <div class="skill-tags">
+            <span class="tag tag-primary">熟练</span>
+            <span class="tag">Vue 3</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span class="ico">📊</span>数据可视化</div>
+          <p class="skill-desc">ECharts 深度使用，D3.js 定制化图表，Canvas 大屏渲染。</p>
+          <div class="skill-tags">
+            <span class="tag tag-primary">熟练</span>
+            <span class="tag">ECharts</span><span class="tag">D3.js</span><span class="tag">Canvas</span>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span class="ico">🎨</span>设计与体验</div>
+          <p class="skill-desc">Figma 协作、设计还原、可访问性与性能优化。</p>
+          <div class="skill-tags">
+            <span class="tag">Figma</span><span class="tag">响应式</span><span class="tag">WCAG</span><span class="tag">Lighthouse 90+</span>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span class="ico">🛠️</span>工程与协作</div>
+          <p class="skill-desc">Git 工作流、CI/CD、代码评审与文档沉淀。</p>
+          <div class="skill-tags">
+            <span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Jest</span><span class="tag">ESLint</span>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span class="ico">✍️</span>写作与分享</div>
+          <p class="skill-desc">坚持写技术博客，擅长把踩坑经验讲清楚。</p>
+          <div class="skill-tags">
+            <span class="tag">技术写作</span><span class="tag">Markdown</span><span class="tag">公开分享</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 兴趣 ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">工作之外</h2>
+        <p class="section-sub">代码之外的生活，是灵感的来源。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card" style="padding:24px;">
+          <div style="font-size:36px; margin-bottom:10px;">📚</div>
+          <h3 style="font-size:16px; font-weight:700; margin-bottom:6px;">阅读</h3>
+          <p class="card-desc">年均 40+ 本，偏爱科技史与产品设计类书籍。</p>
+        </div>
+        <div class="card" style="padding:24px;">
+          <div style="font-size:36px; margin-bottom:10px;">📷</div>
+          <h3 style="font-size:16px; font-weight:700; margin-bottom:6px;">摄影</h3>
+          <p class="card-desc">城市街拍与自然风光，构图和配色也反哺到工作中。</p>
+        </div>
+        <div class="card" style="padding:24px;">
+          <div style="font-size:36px; margin-bottom:10px;">🥾</div>
+          <h3 style="font-size:16px; font-weight:700; margin-bottom:6px;">徒步</h3>
+          <p class="card-desc">周末常去山里走一走，保持身体与心态的平衡。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA ======== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta">
+        <h2 class="cta-title">想了解更多？</h2>
+        <p class="cta-sub">看看我的作品，或者直接聊聊合作与机会。</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="works.html">查看作品</a>
+          <a class="btn btn-accent" href="contact.html">联系我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-title">林一凡<span style="color:var(--accent)">.</span></h3>
+          <p>前端工程师，专注 Web 体验与数据可视化。以作品说话，持续成长。</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">快速导航</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="works.html">作品集</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="contact.html">联系</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">保持联系</h3>
+          <div class="social-links" style="margin-bottom:14px;">
+            <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:hello@example.com" aria-label="发送邮件">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a class="social-link" href="https://example.com/rss.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 订阅">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 14.5a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zM3 3v3.4c7.7 0 14 6.3 14 14H20.4C20.4 9.8 14.2 3 3 3zm0 6.3v3.4c4.8 0 8.7 3.9 8.7 8.7H15c0-6.7-5.4-12.1-12-12.1z"/></svg>
+            </a>
+          </div>
+          <p>📧 <a href="mailto:hello@example.com" style="font-size:14px;">hello@example.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> 林一凡 · 保留所有权利</span>
+        <span>用 ❤️ 与纯静态 HTML/CSS 构建 · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">本站源码</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

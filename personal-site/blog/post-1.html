@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 前端学习路线：从零到可独立接单 · 林一凡的博客</title>
+  <meta name="description" content="一份按阶段划分的前端自学路线：基础、进阶、框架、实战、接单，附资源推荐与避坑指南。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ======== 顶部导航 ======== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">林一凡<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-burger" aria-label="打开菜单">
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="../index.html">首页</a>
+        <a class="nav-link" href="../about.html">关于</a>
+        <a class="nav-link" href="../works.html">作品</a>
+        <a class="nav-link active" href="../blog.html">博客</a>
+        <a class="nav-link" href="../contact.html">联系</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换深浅色模式" title="切换深浅色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zM4.9 4.9a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4zm11.4 11.4a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4l-1.4-1.4a1 1 0 0 1 0-1.4zM3 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm16 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1zM4.9 19.1a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0zm11.4-11.4a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== 文章主体 ======== -->
+  <section class="section">
+    <div class="container">
+      <article>
+        <header class="article-head">
+          <nav class="breadcrumb" aria-label="面包屑">
+            <a href="../index.html">首页</a><span class="sep">/</span>
+            <a href="../blog.html">博客</a><span class="sep">/</span>
+            <span>2026 前端学习路线</span>
+          </nav>
+          <h1 class="article-title">2026 前端学习路线：从零到可独立接单</h1>
+          <div class="article-meta">
+            <span>🖋️ 林一凡</span>
+            <span class="dot"></span>
+            <span>2026-03-12</span>
+            <span class="dot"></span>
+            <span>8 分钟阅读</span>
+            <span class="dot"></span>
+            <span class="tag tag-primary">学习路线</span>
+            <span class="tag">入门</span>
+          </div>
+        </header>
+
+        <div class="article-cover grad-purple" role="img" aria-label="学习路线封面图">🗺️</div>
+
+        <div class="article-body">
+          <p>
+            经常有朋友问我：「零基础学前端，到底该怎么学？」这篇文章我结合自己带新人的经验，
+            把路线拆成<strong>五个阶段</strong>，每个阶段给出明确的目标、学习内容与验收标准。
+            不要贪多，按阶段走完，你就具备了独立接单的能力。
+          </p>
+
+          <h2>阶段一：打地基（约 4~6 周）</h2>
+          <p>目标是能写出<strong>语义化、结构清晰</strong>的页面。这一阶段不要碰框架，先把语言本身学扎实：</p>
+          <ul>
+            <li><strong>HTML：</strong>常用标签、表单、语义化（header/nav/main/article）；</li>
+            <li><strong>CSS：</strong>选择器、盒模型、Flexbox、Grid、媒体查询；</li>
+            <li><strong>JavaScript：</strong>变量、函数、数组/对象、DOM 操作、事件。</li>
+          </ul>
+          <blockquote>
+            <p>入门最大的误区是「刷完教程就觉得自己会了」。请务必自己动手做 2~3 个完整小页面，比如个人名片页、简易待办清单。</p>
+          </blockquote>
+
+          <h2>阶段二：现代布局与工程化（约 4~6 周）</h2>
+          <p>从「能写」到「写得规范、写得快」，这阶段开始引入工具与规范：</p>
+          <ul>
+            <li>CSS 变量、预处理器（Sass）或原子化方案（Tailwind）；</li>
+            <li>Git 与 GitHub 的基本工作流：提交、分支、Pull Request；</li>
+            <li>构建工具 Vite 的使用与理解；</li>
+            <li>TypeScript 基础类型与接口。</li>
+          </ul>
+
+          <h2>阶段三：框架与实战（约 6~8 周）</h2>
+          <p>选择 <strong>Vue 3</strong> 或 <strong>React</strong> 之一深入学习，另一个略作了解即可：</p>
+          <ul>
+            <li>组件化、props / 状态管理、生命周期或 Hooks；</li>
+            <li>路由与常见请求库（fetch / axios）；</li>
+            <li>跟着教程做 2 个项目，再独立做一个完整的「博客管理后台」作为结业项目。</li>
+          </ul>
+
+          <h2>阶段四：性能、测试与质量（约 3~4 周）</h2>
+          <p>这一阶段决定你能拿多少工资，也是接单时和别人的差距所在：</p>
+          <table>
+            <thead>
+              <tr><th>主题</th><th>关键点</th><th>工具</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>性能优化</td><td>LCP、懒加载、缓存、代码分割</td><td>Lighthouse、WebPageTest</td></tr>
+              <tr><td>可访问性</td><td>语义化、键盘操作、对比度</td><td>axe、WAVE</td></tr>
+              <tr><td>单元测试</td><td>组件与函数测试</td><td>Vitest / Jest</td></tr>
+              <tr><td>代码质量</td><td>Lint、格式化、Code Review</td><td>ESLint、Prettier</td></tr>
+            </tbody>
+          </table>
+
+          <h2>阶段五：独立接单（持续）</h2>
+          <p>能力具备后，从小单开始积累信任：</p>
+          <ol>
+            <li>先做 1~2 个免费/低价项目换真实案例与好评；</li>
+            <li>明确交付范围（页面数量、响应式、上线部署、修改次数）；</li>
+            <li>按时交付、主动沟通，让「靠谱」成为你的名片。</li>
+          </ol>
+
+          <h2>写在最后</h2>
+          <p>
+            学习前端没有捷径，但可以少走弯路。我的建议始终是：<strong>以项目驱动学习，边做边补</strong>。
+            如果你正走在这条路上，欢迎在评论区或通过<a href="../contact.html">联系页</a>和我交流。
+          </p>
+        </div>
+
+        <div class="article-tags">
+          <span class="tag tag-primary">学习路线</span>
+          <span class="tag">前端</span>
+          <span class="tag">入门</span>
+        </div>
+
+        <nav class="article-nav" aria-label="上一篇下一篇">
+          <a href="post-2.html">
+            <span class="nav-label">下一篇</span>
+            <span class="nav-title">CSS 现代布局完全指南：Grid 与 Flexbox 实战 →</span>
+          </a>
+          <a href="post-3.html">
+            <span class="nav-label">更多文章</span>
+            <span class="nav-title">用静态网站做个人主页：我的实践与复盘 →</span>
+          </a>
+        </nav>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-title">林一凡<span style="color:var(--accent)">.</span></h3>
+          <p>前端工程师，专注 Web 体验与数据可视化。以作品说话，持续成长。</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">快速导航</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../about.html">关于我</a></li>
+            <li><a href="../works.html">作品集</a></li>
+            <li><a href="../blog.html">博客</a></li>
+            <li><a href="../contact.html">联系</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">保持联系</h3>
+          <div class="social-links" style="margin-bottom:14px;">
+            <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:hello@example.com" aria-label="发送邮件">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a class="social-link" href="https://example.com/rss.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 订阅">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 14.5a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zM3 3v3.4c7.7 0 14 6.3 14 14H20.4C20.4 9.8 14.2 3 3 3zm0 6.3v3.4c4.8 0 8.7 3.9 8.7 8.7H15c0-6.7-5.4-12.1-12-12.1z"/></svg>
+            </a>
+          </div>
+          <p>📧 <a href="mailto:hello@example.com" style="font-size:14px;">hello@example.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> 林一凡 · 保留所有权利</span>
+        <span>用 ❤️ 与纯静态 HTML/CSS 构建 · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">本站源码</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

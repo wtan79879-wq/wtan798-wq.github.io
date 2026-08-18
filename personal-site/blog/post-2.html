@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS 现代布局完全指南：Grid 与 Flexbox 实战 · 林一凡的博客</title>
+  <meta name="description" content="一个页面从「能看」到「好看」的布局技巧：Grid 与 Flexbox 的选择标准、实战代码与常见坑。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ======== 顶部导航 ======== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">林一凡<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-burger" aria-label="打开菜单">
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="../index.html">首页</a>
+        <a class="nav-link" href="../about.html">关于</a>
+        <a class="nav-link" href="../works.html">作品</a>
+        <a class="nav-link active" href="../blog.html">博客</a>
+        <a class="nav-link" href="../contact.html">联系</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换深浅色模式" title="切换深浅色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zM4.9 4.9a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4zm11.4 11.4a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4l-1.4-1.4a1 1 0 0 1 0-1.4zM3 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm16 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1zM4.9 19.1a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0zm11.4-11.4a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== 文章主体 ======== -->
+  <section class="section">
+    <div class="container">
+      <article>
+        <header class="article-head">
+          <nav class="breadcrumb" aria-label="面包屑">
+            <a href="../index.html">首页</a><span class="sep">/</span>
+            <a href="../blog.html">博客</a><span class="sep">/</span>
+            <span>CSS 现代布局完全指南</span>
+          </nav>
+          <h1 class="article-title">CSS 现代布局完全指南：Grid 与 Flexbox 实战</h1>
+          <div class="article-meta">
+            <span>🖋️ 林一凡</span>
+            <span class="dot"></span>
+            <span>2026-02-08</span>
+            <span class="dot"></span>
+            <span>12 分钟阅读</span>
+            <span class="dot"></span>
+            <span class="tag tag-primary">CSS</span>
+            <span class="tag">布局</span>
+          </div>
+        </header>
+
+        <div class="article-cover grad-green" role="img" aria-label="CSS 布局封面图">🧱</div>
+
+        <div class="article-body">
+          <p>
+            很多同学把 Grid 和 Flexbox 当成「二选一」的对手，其实它们是互补的两套工具。
+            记住一句口诀：<strong>一维布局用 Flexbox，二维布局用 Grid</strong>。下面用实战场景讲清楚怎么选、怎么写。
+          </p>
+
+          <h2>一、什么时候用 Flexbox</h2>
+          <p>当元素沿<strong>一个方向</strong>排列时，Flexbox 是最简单直接的选择：</p>
+          <ul>
+            <li>导航栏的水平菜单；</li>
+            <li>按钮组、标签栏的对齐；</li>
+            <li>卡片内容（标题、描述、操作按钮）的垂直排布；</li>
+            <li>「最后一项贴底」的经典问题：<code>margin-top: auto</code>。</li>
+          </ul>
+
+          <h2>二、什么时候用 Grid</h2>
+          <p>当需要同时控制<strong>行和列</strong>，或希望元素能「跨越」网格时，用 Grid：</p>
+          <ul>
+            <li>整页布局（header / main / sidebar / footer）；</li>
+            <li>作品集、博客列表等卡片网格；</li>
+            <li>需要自动填充的响应式网格。</li>
+          </ul>
+          <p>一个最常用的响应式网格写法，三行搞定：</p>
+          <pre><code>.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}</code></pre>
+          <p>
+            这段代码的含义：每列最小 280px，放不下就自动换行，列数自适应。
+            无论屏幕多宽，它都能自动铺满，不需要写任何媒体查询。
+          </p>
+
+          <h2>三、实战：导航栏 + 内容区</h2>
+          <p>导航栏水平排列且右侧按钮贴边，用 Flexbox：</p>
+          <pre><code>.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header nav { display: flex; gap: 8px; }</code></pre>
+          <p>内容区需要「左侧正文 + 右侧侧边栏」，且正文内还有卡片网格，内外搭配：</p>
+          <pre><code>.layout {
+  display: grid;
+  grid-template-columns: 1fr 300px; /* 自适应 + 固定侧栏 */
+  gap: 32px;
+}</code></pre>
+
+          <h2>四、避坑清单</h2>
+          <blockquote>
+            <p>1. 给 flex/grid 子项设置了 <code>width/height</code> 但没生效？检查是否设置了 <code>flex-shrink: 0</code>。<br />
+            2. 网格项被拉伸得很难看？检查 <code>align-items</code> 与 <code>place-items</code>。<br />
+            3. 间隙没有生效？<code>gap</code> 只在 flex/grid 容器上有效，子项上写 <code>margin</code> 是旧做法。</p>
+          </blockquote>
+
+          <h2>五、移动端适配建议</h2>
+          <ol>
+            <li>优先用 <code>auto-fill + minmax</code> 实现「少写媒体查询」的响应式；</li>
+            <li>确实需要断点时，从 <code>768px</code> 和 <code>1024px</code> 两个档位起步；</li>
+            <li>导航在移动端收成汉堡菜单（本网站就是纯 CSS 实现的）。</li>
+          </ol>
+          <p>
+            布局是 CSS 的骨架，值得花时间吃透。有任何问题欢迎<a href="../contact.html">联系我</a>交流，
+            也欢迎在评论区补充你的实战经验。
+          </p>
+        </div>
+
+        <div class="article-tags">
+          <span class="tag tag-primary">CSS</span>
+          <span class="tag">Grid</span>
+          <span class="tag">Flexbox</span>
+          <span class="tag">响应式</span>
+        </div>
+
+        <nav class="article-nav" aria-label="上一篇下一篇">
+          <a href="post-1.html">
+            <span class="nav-label">上一篇</span>
+            <span class="nav-title">2026 前端学习路线：从零到可独立接单 →</span>
+          </a>
+          <a href="post-3.html">
+            <span class="nav-label">下一篇</span>
+            <span class="nav-title">用静态网站做个人主页：我的实践与复盘 →</span>
+          </a>
+        </nav>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-title">林一凡<span style="color:var(--accent)">.</span></h3>
+          <p>前端工程师，专注 Web 体验与数据可视化。以作品说话，持续成长。</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">快速导航</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../about.html">关于我</a></li>
+            <li><a href="../works.html">作品集</a></li>
+            <li><a href="../blog.html">博客</a></li>
+            <li><a href="../contact.html">联系</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">保持联系</h3>
+          <div class="social-links" style="margin-bottom:14px;">
+            <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:hello@example.com" aria-label="发送邮件">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a class="social-link" href="https://example.com/rss.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 订阅">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 14.5a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zM3 3v3.4c7.7 0 14 6.3 14 14H20.4C20.4 9.8 14.2 3 3 3zm0 6.3v3.4c4.8 0 8.7 3.9 8.7 8.7H15c0-6.7-5.4-12.1-12-12.1z"/></svg>
+            </a>
+          </div>
+          <p>📧 <a href="mailto:hello@example.com" style="font-size:14px;">hello@example.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> 林一凡 · 保留所有权利</span>
+        <span>用 ❤️ 与纯静态 HTML/CSS 构建 · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">本站源码</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
