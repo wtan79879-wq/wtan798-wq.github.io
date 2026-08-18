@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>博客 · 林一凡</title>
+  <meta name="description" content="林一凡的技术博客：前端学习路线、CSS 现代布局、静态网站实践等原创文章。" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ======== 顶部导航 ======== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">林一凡<span>.</span></a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+      <label for="nav-toggle" class="nav-burger" aria-label="打开菜单">
+        <span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="about.html">关于</a>
+        <a class="nav-link" href="works.html">作品</a>
+        <a class="nav-link active" href="blog.html">博客</a>
+        <a class="nav-link" href="contact.html">联系</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="切换深浅色模式" title="切换深浅色模式">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 16a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1zM4.9 4.9a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 1 1-1.4 1.4L4.9 6.3a1 1 0 0 1 0-1.4zm11.4 11.4a1 1 0 0 1 1.4 0l1.4 1.4a1 1 0 0 1-1.4 1.4l-1.4-1.4a1 1 0 0 1 0-1.4zM3 12a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm16 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1zM4.9 19.1a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0zm11.4-11.4a1 1 0 0 1 0-1.4l1.4-1.4a1 1 0 1 1 1.4 1.4l-1.4 1.4a1 1 0 0 1-1.4 0z"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== 页头 ======== -->
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="面包屑">
+        <a href="index.html">首页</a><span class="sep">/</span><span>博客</span>
+      </nav>
+      <h1 class="page-title">博客</h1>
+      <p class="page-sub">记录学习与踩坑，希望我的经验能帮你少走弯路。保持每周一更。</p>
+    </div>
+  </section>
+
+  <!-- ======== 文章列表 ======== -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid grid-3">
+
+        <article class="card">
+          <a class="card-cover grad-purple" href="blog/post-1.html" aria-label="2026 前端学习路线文章">
+            🗺️<span class="cover-tag">学习路线</span>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title"><a href="blog/post-1.html">2026 前端学习路线：从零到可独立接单</a></h3>
+            <p class="card-desc">一份按阶段划分的前端自学路线，附资源推荐与避坑指南，写给想入门又怕走弯路的朋友。</p>
+            <div class="card-meta">
+              <span>2026-03-12</span><span>·</span><span>8 分钟</span>
+              <span class="tag tag-primary">学习路线</span>
+            </div>
+            <a class="card-link" href="blog/post-1.html">阅读全文</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card-cover grad-green" href="blog/post-2.html" aria-label="CSS 现代布局文章">
+            🧱<span class="cover-tag">CSS</span>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title"><a href="blog/post-2.html">CSS 现代布局完全指南：Grid 与 Flexbox 实战</a></h3>
+            <p class="card-desc">一个页面从「能看」到「好看」的布局技巧，附可直接复制的代码片段与常见坑。</p>
+            <div class="card-meta">
+              <span>2026-02-08</span><span>·</span><span>12 分钟</span>
+              <span class="tag tag-primary">CSS</span>
+            </div>
+            <a class="card-link" href="blog/post-2.html">阅读全文</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card-cover grad-pink" href="blog/post-3.html" aria-label="静态网站复盘文章">
+            🚀<span class="cover-tag">复盘</span>
+          </a>
+          <div class="card-body">
+            <h3 class="card-title"><a href="blog/post-3.html">用静态网站做个人主页：我的实践与复盘</a></h3>
+            <p class="card-desc">为什么选择纯静态方案、如何保持低成本高质感，以及我在这个过程中踩过的坑。</p>
+            <div class="card-meta">
+              <span>2026-01-20</span><span>·</span><span>6 分钟</span>
+              <span class="tag tag-primary">复盘</span>
+            </div>
+            <a class="card-link" href="blog/post-3.html">阅读全文</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 分页 -->
+      <nav class="pagination" aria-label="文章分页">
+        <a class="page-link disabled" href="#" aria-disabled="true" tabindex="-1">« 上一页</a>
+        <a class="page-link current" href="blog.html" aria-current="page">1</a>
+        <a class="page-link disabled" href="#" aria-disabled="true" tabindex="-1" title="更多文章整理中">2</a>
+        <a class="page-link disabled" href="#" aria-disabled="true" tabindex="-1">下一页 »</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ======== CTA ======== -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta">
+        <h2 class="cta-title">喜欢我的文章？</h2>
+        <p class="cta-sub">欢迎留言交流，也欢迎订阅 RSS 或通过社交平台关注最新更新。</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="contact.html">给我留言</a>
+          <a class="btn btn-outline" href="https://example.com/rss.xml" target="_blank" rel="noopener noreferrer">RSS 订阅</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-title">林一凡<span style="color:var(--accent)">.</span></h3>
+          <p>前端工程师，专注 Web 体验与数据可视化。以作品说话，持续成长。</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">快速导航</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我</a></li>
+            <li><a href="works.html">作品集</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="contact.html">联系</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-title">保持联系</h3>
+          <div class="social-links" style="margin-bottom:14px;">
+            <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 5 18.3 5.3 18.3 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:hello@example.com" aria-label="发送邮件">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+            <a class="social-link" href="https://example.com/rss.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS 订阅">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.2 14.5a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zM3 3v3.4c7.7 0 14 6.3 14 14H20.4C20.4 9.8 14.2 3 3 3zm0 6.3v3.4c4.8 0 8.7 3.9 8.7 8.7H15c0-6.7-5.4-12.1-12-12.1z"/></svg>
+            </a>
+          </div>
+          <p>📧 <a href="mailto:hello@example.com" style="font-size:14px;">hello@example.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> 林一凡 · 保留所有权利</span>
+        <span>用 ❤️ 与纯静态 HTML/CSS 构建 · <a href="https://github.com/" target="_blank" rel="noopener noreferrer">本站源码</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
